@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+
+    <style>
+    *{  margin: 0;
+        padding: 0;
+        box-sizing: border-box;}
+    .wrap{  width: 1600px;margin: 0 auto;}
+    .info, .tech, .best, .video{height: 1080px;}
+
+
+
+/* 헤더 */
+    header{ 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 50px 0;}
+    .logo{  margin-left: 20px;}
+    nav ul{ display: flex;
+            justify-content: space-between;
+            list-style: none;
+            width: max-content;margin: auto;
+            padding-top: 40px ;}
+    nav ul a{   color: white;
+                text-decoration: none;
+                margin: 0 30px;
+                font-size: 20px;
+                font-weight: bold;}
+    .topmenu{   display: flex;
+                justify-content: flex-end;
+                color: white;
+                padding-top: 40px ;}
+    .topmenu span{  margin: 0 10px;}
+    main{   background: url(Main_banner.jpg) no-repeat;
+            height: 1080px;
+            background-size: 100% 100%;}
+
+
+
+/* 내용 */
+    .info{ text-align: center;}
+    .title{ padding-bottom: 100px;
+            padding-top: 200px;}
+    h1{ font-size: 80px;
+        color: rgb(67, 67, 67);}
+    .title p{color: rgb(126, 124, 124);}
+    .title span{font-size: larger;}
+    .info_ct{   display: flex;
+                justify-content: space-between;}
+    .p1{font-size: large;
+        font-weight: bold;}
+    .info_ct p{ margin: 10px 0;}
+   
+
+    .tech{  text-align: center;}
+    .tech_ct{   display: flex;
+                justify-content: space-between;}
+    .techbox1{  margin: 0 10px;}
+
+
+    .best{  text-align: center;}
+    .best_ct{   display: flex;
+                justify-content: space-between;
+                align-items: center;}
+    .best_ct_left{  width: 866px;}
+    .best_ct_right{ width: 734px;height: 709px;
+                    display: flex;
+                    justify-content:space-between;
+                    flex-wrap: wrap;}
+    .bestbox1{padding: 0 13px}
+    .bestbox2{padding: 0 13px;
+                padding-top: 16px;}
+    .bestbox1 img{ width: 100%;}
+    .bestbox2 img{ width: 100%;}
+
+
+    .video{
+            text-align: center;
+            justify-content: space-between;
+            padding-top: 120px;
+            padding-bottom: 0px;
+            margin: 50px 0}
+
+
+
+/* 푸터 */
+    footer{ text-align: center;}
+    .footer_ct1{ background: rgb(0, 0, 24);
+                 margin-top: 180px;}
+    .flogo{ padding: 80px;}
+    .footer_ct1 p{ color: white;}
+    .snsnav{ width: max-content; margin: auto;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding: 30px;}
+    .snsnav ul{ display: flex;
+                justify-content: space-between;}
+    .snsbox{border: 1px solid rgb(138, 138, 138);
+            width: 60px; height: 60px;
+            padding:20px 0;
+            margin: 0 2px;}
+    .fmenu{padding: 20px;}
+    .fmenu ul { display: flex;
+                justify-content: space-between;
+                width: max-content;margin: auto;
+                list-style: none;
+                margin:}
+    .fmenu ul span{color: gray;
+                    padding: 0 30px;}
+
+
+    .footer_ct2{ background: black;
+                padding: 5px 0;}
+    .footer_ct2 span{ color: rgb(106, 105, 105);
+                      font-style: italic;}
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <div class="wrap">
+            <header>
+             <div class="logo">
+                    <img src="logo2.png" width="220px">
+             </div>
+             <nav>
+                <ul>
+                    <li><a href="#">바스</a></li>
+                    <li><a href="#">리모델링</a></li>
+                    <li><a href="#">렌탈/케어서비스</a></li>
+                    <li><a href="#">제품</a></li>
+                    <li><a href="#">AS/문의</a></li>
+              </ul>
+            </nav>
+             <div class="topmenu">
+                <span>로그인</span>
+                 <span>회원가입</span>
+                <span>마이페이지</span>
+            </div>
+             </header>
+       </div>
+    </main>
+
+
+
+    <div class="wrap">
+        <div class="info">
+            <div class="title">
+                <p>01.대림바스</p>
+                <h1>ONE&ONLY</h1>
+                <span>21년 연속 점유율 1위, 59년 기술력과 노하우</span>
+            </div>
+            <div class="info_ct">
+                <div class="infobox1">
+                    <a href="#"><img src="infobox1.png"></a>
+                    <p class="p1">SMARTLET</p>
+                    <p>자동 물내림 일체형 비데</p>
+                </div>
+                <div class="infobox1">
+                    <a href="#"><img src="infobox2.png"></a>
+                    <p class="p1">DAERIM BATH</p>
+                    <p>프리미엄 욕실의 중심</p>
+                </div>
+                <div class="infobox1">
+                    <a href="#"><img src="infobox3.png"></a>
+                    <p class="p1">HISTORY</p>
+                    <p>토탈 홈 인테리어 대림비엔코</p>
+                </div>
+                <div class="infobox1">
+                    <a href="#"><img src="infobox4.png"></a>
+                    <p class="p1">ECO FRIENDLY</p>
+                    <p>물 절약을 위한 초절수 제품</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="tech">
+        <div class="title">
+            <p>02.스마트 테크</p>
+            <h1>THE BEST SMARTTECH</h1>
+            <span>생활과 품격을 아우르는 가장 독보적인 기술</span>
+        </div>
+        <div class="tech_ct">
+            <div class="techbox1">
+                <a href="#"><img src="techbox1.png"></a>
+            </div>
+            <div class="techbox1">
+                <a href="#"><img src="techbox2.jpg"></a>
+            </div>
+            <div class="techbox1">
+                <a href="#"><img src="techbox3.jpg"></a>
+            </div>
+            <div class="techbox1">
+                <a href="#"><img src="techbox4.jpg"></a>
+            </div>
+            <div class="techbox1">
+                <a href="#"><img src="techbox5.jpg"></a>
+            </div>
+            <div class="techbox1">
+                <a href="#"><img src="techbox6.jpg"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="wrap">
+        <div class="best">
+            <div class="title">
+                <p>03.추천 제품</p>
+                <h1>BEST PRODUCTS</h1>
+                <span>대림바스의 대표 제품을 소개합니다.</span>
+            </div>
+            <div class="best_ct">
+                <div class="best_ct_left">
+                    <a href="#"><img src="bestboxbig.png"></a>
+                </div>
+                <div class="best_ct_right">
+                    <div class="bestbox1">
+                        <a href="#"><img src="bestbox1.jpg"></a>
+                    </div>
+                    <div class="bestbox1">
+                        <a href="#"><img src="bestbox2.jpg"></a>
+                    </div>
+                    <div class="bestbox2">
+                        <a href="#"><img src="bestbox3.jpg"></a>
+                    </div>
+                    <div class="bestbox2">
+                        <a href="#"><img src="bestbox4.jpg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="video">
+            <div class="vidio_ct">
+                <a href="video-ct.mp4">
+                    <img src="video-main.png" width=100%>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_ct1">
+            <div class="flogo">
+                <img src="logo2.png">
+            </div>
+            <p>
+                서울시 영등포구 버드나루로 84 제일빌딩<br>
+                대림바스 1588-1952 / 대림 바스&키친 1588-4360 / 대림케어: 1588-3667<br>
+                상담시간 : AM 09:00 - PM 05:00 (공휴일 휴무)
+            </p>
+            <div class="snsnav">
+                <ul>
+                    <li><a href="#">
+                        <div class="snsbox"><img src="sns_blog.png"></div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="snsbox"><img src="sns_f.png"></div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="snsbox"><img src="sns_instar.png"></div>
+                    </a></li>
+                    <li><a href="#">
+                        <div class="snsbox"><img src="sns_you.png"></div>
+                    </a></li>
+                </ul>
+            </div>
+            <div class="fmenu">
+                <ul>
+                    <li><span>이용약관</span></li>
+                    <li><span>개인정보처리방침</span></li>
+                    <li><span>이메일무단수집거부</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer_ct2">
+            <span>&copy;COPYRIGHT@ 2021 DAELIM B&Co, LIMITED ALL RIGHT RESERVED.</span>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,197 @@
+
+/* 헤더 */
+    header{ 
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            top: 5%;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 999;
+            width: 85%;}
+    nav ul{ display: flex;
+            justify-content: space-between;
+            list-style: none;
+            width: max-content;margin: auto;
+            padding-top: 2.5rem ;}
+    nav ul a{   color: white;
+                text-decoration: none;
+                margin: 0 1.875rem;
+                font-size: 1.25rem;
+                font-weight: bold;}
+    .topmenu{   display: flex;
+                justify-content: flex-end;
+                color: white;
+                padding-top: 2.5rem;}
+    .topmenu span{  margin: 0 0.625rem;}
+    main{   position: relative;
+            z-index: 0;}
+
+
+
+/* 내용 */
+    .info{ text-align: center;}
+
+    .title{ padding-bottom: 6.25rem;
+            padding-top: 12.5rem;}        
+    h1{ font-size: 5rem;
+        color: rgb(67, 67, 67);}
+    .title p{
+        color: rgb(126, 124, 124);
+        font-size: 1rem;}
+    .title span{font-size:1.2rem;}
+
+    .info_ct{   display: flex;
+                justify-content: space-between;}
+    .p1{font-size: 1.2rem;
+        font-weight:bold;
+        padding-top: 5%;}
+    .info_ct p{ margin: 0.7rem 0;}
+
+    .tech{  text-align: center;}
+    .tech_ct{   display: flex;
+                justify-content: space-between;}
+    .techbox1{  margin: 0 0.625rem }
+
+
+    .best{  text-align: center;}
+    .best_ct{   display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin: auto;}
+    .best_ct_left{  width: 100%; height: auto;}
+    .best_ct_right{ width: 100%; height: auto;
+                    display: flex;
+                    justify-content:space-between;
+                    flex-wrap: wrap;}
+    .bestbox1{  
+                padding: 2.2% 2.2%;}
+    .bestbox2{  
+                padding: 2.2% 2.2%;}
+    .bestbox1 img{width: 100%;}
+    .bestbox2 img{width: 100%;}
+
+
+    .video{
+            text-align: center;
+            justify-content: space-between;
+            padding-top: 180px;}
+
+
+/* 푸터 */
+    footer{ text-align: center;}
+    .footer_ct1{ background: rgb(0, 0, 24);
+                 margin-top: 11.25rem;}
+    .flogo{ padding: 5rem;}
+    .footer_ct1 p{ color: white;}
+    .snsnav{ width: max-content; margin: auto;
+            display: flex;
+            justify-content: space-between;
+            text-align: center;
+            padding: 1.875rem;}
+    .snsnav ul{ display: flex;
+                justify-content: space-between;}
+    .snsbox{border: 1px solid rgb(138, 138, 138);
+            width: 3.75rem; height: 3.75rem;
+            padding:1.25rem 0;
+            margin: 0 0.125rem;
+                border-radius: 10px;}
+    .fmenu{padding: 1.25rem;}
+    .fmenu ul { display: flex;
+                justify-content: space-between;
+                width: max-content;margin: auto;
+                list-style: none;}
+    .fmenu ul span{color: gray;
+                    padding: 0 1.875rem;}
+
+
+    .footer_ct2{ background: black;
+                padding: 0.313rem 0;}
+    .footer_ct2 span{ color: rgb(106, 105, 105);
+                      font-style: italic;}
+
+/* 호버모음 */
+nav ul li a:hover{color: #326aff;}
+nav ul li a{transition: all 0.3s ease;}
+
+.infobox1 img:hover{transform: scale(1.05);}
+.infobox1 img{transition: all 0.5s ease;}
+
+.best_ct_left img:hover{}
+.best_ct_right img:hover{}
+.best_ct img{transition: all 0.5s ease;}
+
+.techbox1:hover{opacity: 0.5;}
+
+
+
+
+
+@media(max-width:600px){
+        .wrap{width: 100%; margin: auto;}
+          header, .tech_ct, .best_ct, .best_ct_left{
+                flex-direction: column;
+                flex-wrap: wrap;
+                align-items: center;
+                gap: 0.5rem;}
+
+        header{
+                top: 2%;
+                padding: 10px 10px;
+                color: black;}
+        main{   padding-top: 10rem;}
+        .logo{  
+                background-color: aqua;
+                background:url(logo.png) no-repeat;
+                width: 175px; height: 55px;}
+        .logo img{display: none;}
+        .topmenu{display: none;}
+        nav ul{
+                padding-top: 1rem;}
+        nav ul li a{
+                font-size: 1rem;
+                margin: 0 0.5rem;
+                color: black;}
+
+        .title{ 
+                padding-bottom: 3rem;
+                padding-top: 8rem;}
+        .title p{font-size: 0.8rem;}
+        .title h1{font-size: 3.5rem;}
+        .title span{font-size:1rem;}
+
+
+
+        .info_ct img{width: 100%; height: auto; margin: auto;}
+        .info_ct p{font-size: 0.7rem;}
+        .info_ct .infobox1 span{font-size: 0.7rem;display: none}
+        .infobox1{padding:0 5px}
+
+        .best_ct_left img{
+                width: 98%;
+                height: auto;
+                margin: auto;}
+        .bestbox1{  padding: 0% 1%;}
+        .bestbox2{  padding: 0% 1%;}
+        .bestbox1{width: 25%; height: auto;}
+        .bestbox2{width: 25%; height: auto;}
+
+                        
+        .video{
+                width: 100%;
+                height: auto;
+                margin: auto;
+                padding: 25% 0;}
+        .footer_ct1{ background: rgb(0, 0, 24);
+                margin-top: 3%;}
+        .flogo{ padding: 3rem;}
+
+
+
+
+        
+
+     
+       
+}

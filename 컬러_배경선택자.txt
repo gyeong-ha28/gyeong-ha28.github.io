@@ -1,0 +1,8 @@
+.s-hero__bg
+.s-header_nav 
+.s-about
+.s-contact
+
+--color-notice  
+--color-active  
+--color-1-lighter

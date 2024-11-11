@@ -1,0 +1,292 @@
+ <!doctype html>                 
+<html lang="en">                
+<head>                          
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">     
+    <title> 뚜레쥬르 </title> 
+    
+    <!-- Link header CSS -->
+    <link rel="stylesheet" href="pc_fulldown.css">
+    <!-- Link footer CSS -->
+    <link rel="stylesheet" href="footer.css"/>
+
+      
+<style>
+    * {margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+    }
+
+    .wrap {
+        width: 1600px;
+        margin: auto;        
+    }
+
+    body{
+        font-family: 'NanumBarunGothic';
+    }
+
+    .header .gnb{
+        margin-bottom: -100px;
+    }
+  /* 마우스 오버 시 노란줄 나오게하기-header,footer합쳤을때 위치변경 */
+    .header .gnb > .clearfix > li > a{        
+    }
+     
+        
+    section {
+            padding: 60px;
+            margin: auto;
+    }
+    .evtitle{
+        text-align: center;
+        font-size: 50px;
+        margin-bottom: 80px;
+        
+        letter-spacing: 2px;
+        
+    }
+    .ev1{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;        
+    }
+    .e1{
+       
+        width: 500px;
+        height: 700px;
+        margin-bottom: 150px;        
+    }
+    .e1:hover{
+    transform: scale(1.02);
+    }
+    .ev1 .e1 img{
+        width: 500px;
+        height: 554px;
+        border-radius: 20px;
+    }
+    .ev1 h1{
+        margin-top: 20px;
+        text-align: center;        
+    }    
+    .ev1 .e1 p{
+        color: #868686 ; 
+        text-align: center;
+
+    }
+    .ebutton1, .ebutton2{
+        color: #fff;
+        border: none;
+        border-radius: 12px;
+        width: 50px;
+        padding: 5px 5px;
+    }
+    .ebutton2{        
+        background-color: #323232;
+    }    
+    .ebutton1{
+        background-color: #ffb500;        
+    }    
+    .top_bar{        
+        display: flex;
+        justify-content: space-between;     
+    }
+    .bar{
+        scroll-behavior: smooth; 
+        background: #0d4633;         
+        border-radius: 10px;      
+        height: 36px;
+        width: 60px;              
+        text-align: center;
+        margin-bottom: 10px;  
+        margin-left: auto;  
+        padding-top: 7px;    
+    }
+    .bar a{
+        text-decoration: none ;
+        color: #ffb500;
+        font-size: 20px;
+        font-weight: bold;        
+    } 
+    .foot p{ 
+        color:  #fff; 
+    }
+
+    
+
+</style>
+</head>
+
+<body>   
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header clearfix">
+                    <div class="logo">
+                        <h1><a href="../index.html">
+                            <img src="flogo.png">
+                        </a></h1>
+                    </div>
+                    <nav class="gnb">
+                        <ul class="clearfix">
+                            <li><a href="../story/story.html">브랜드 소식</a>
+                                <ul class="submenu">
+                                    <li><a href="#">스토리</a></li>
+                                    <li><a href="#">제조 이야기</a></li>
+                                    <li><a href="#">뉴스&공지사항</a></li>
+                                    <li><a href="#">뚜레쥬르 착한빵</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../item/item.html">제품</a>
+                                <ul class="submenu">
+                                    <li><a href="#">케이크</a></li>
+                                    <li><a href="#">빵</a></li>
+                                    <li><a href="#">델리</a></li>
+                                    <li><a href="#">음료</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="../event/event.html">이벤트&멤버십</a>
+                                <ul class="submenu">
+                                    <li><a href="#">진행중 이벤트</a></li>
+                                    <li><a href="#">CJ ONE 멤버십</a></li>
+                                    <li><a href="#">제휴 혜택</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">뚜레쥬르 앱</a>
+                                <ul class="submenu">
+                                    <li><a href="#">어플 소개</a></li>
+                                    <li><a href="#">홈페이지 예약배송</a></li>
+                                    <li><a href="#">꽃&케이크 배송</a></li>
+                                    <li><a href="#">대량 구매 문의</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--.nav-->
+                    <div class="topmenu">
+                            <span><a href="#">매장안내</a></span>
+                            <span><a href="#">고객센터</a></span>
+                            <span><a href="#">기사채용안내</a></span>
+                            <div class="login"><a href="#">Login</a></div>
+                        </div>
+                    </div>
+                </div>
+                <!--.header-->
+            </div>
+            <!--.row-->
+        </div>
+        <!--.container-->
+        <div id="gnbBg"></div>
+    </header>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="res_fulldown.js"></script> 
+                         
+
+
+    <section>
+        <h1 class="evtitle wrap"> 이벤트 & 멤버쉽 </h1>
+        <div class="ev1 wrap">
+            <div class="e1">
+                <div><img src="img/ev1.png">
+                    <h1>CJ푸드빌 기프트 카드</h1>
+                    <br>
+                    <p><button type="button" class="ebutton1">진행중</button> &nbsp;&nbsp; <span>2024.10.01 ~ 2024.12.31</span></p>                
+                </div>                
+            </div><!--e1-->
+            <div class="e1">
+                <div><img src="img/ev2.png">
+                    <h1>(Tmembership) 10월엔 Big 이벤트</h1>
+                    <br>
+                    <p><button type="button" class="ebutton1">진행중</button> &nbsp;&nbsp; <span>2024.10.01 ~ 2024.10.31</span></p>                
+                </div>                                 
+            </div><!--e1-->
+            <div class="e1">                
+                <div><img src="img/ev3.png">
+                    <h1>초성퀴즈이벤트(이름 맞히고 선물 GET!)</h1>
+                    <br>
+                    <p><button type="button" class="ebutton1">진행중</button> &nbsp;&nbsp; <span>2024.10.07 ~ 2024.10.24</span></p>                
+                </div>                
+            </div><!--e1-->              
+
+            <div class="e1">
+                <div><img src="img/ev4.png">
+                    <h1>좋아하는 걸~ 더 기분좋게~ </h1>
+                    <br>
+                    <p><button type="button" class="ebutton1">진행중</button> &nbsp;&nbsp; <span>2024.10.01 ~ 2024.10.31</span></p>                
+                </div>                  
+            </div><!--e1-->              
+            <div class="e1">
+                <div><img src="img/ev5.png">
+                    <h1>Happy!! Birthday~</h1>
+                    <br>
+                    <p><button type="button" class="ebutton2">종료</button> &nbsp;&nbsp; <span>2024.09.01~2024.09.30</span></p>                
+                </div>                      
+            </div><!--e1-->
+            <div class="e1">
+                <div><img src="img/ev6.png">
+                    <h1>배달앱 할인 혜택(최대 6천원)</h1>
+                    <br>
+                    <p><button type="button" class="ebutton2">종료</button> &nbsp;&nbsp; <span>2024.07.01~2024.07.31</span></p>                
+                </div>         
+            </div><!--e1-->
+
+            <div class="e1">
+                <div><img src="img/ev7.png">
+                    <h1>현대카드 M포인트 이벤트</h1>
+                    <br>
+                    <p><button type="button" class="ebutton2">종료</button> &nbsp;&nbsp; <span>2024-06-01 ~ 2024-06-30</span></p>                
+                </div>                        
+            </div><!--e1-->
+            <div class="e1">
+                <div><img src="img/ev8.png">
+                    <h1>CJ ONE 고객이라면 식빵이 무료</h1>
+                    <br>
+                    <p><button type="button" class="ebutton2">종료</button> &nbsp;&nbsp; <span>2023.12.01 ~ 2024.01.13</span></p>                
+                </div>                      
+            </div><!--e1-->
+            <div class="e1">
+                <div><img src="img/ev9.png">
+                    <h1>새해맞이 선물대전</h1>
+                    <br>
+                    <p><button type="button" class="ebutton2">종료</button> &nbsp;&nbsp; <span>2023.12.01 ~ 2024.01.01</span></p>                
+                </div>                      
+            </div><!--e1-->
+            
+        </div><!--ev1-->
+           
+    </section>
+    <div class="top_bar">
+        <div class="bar"><a href="#"> TOP </a></div>
+    </div>
+      
+       
+    
+    
+    <footer>
+        <div class="foot wrap">
+            <div class="ftop">
+                <p>이용약관 · 위치기반서비스 이용약관 · <span>개인정보처리방침</span> · 이메일무단수집거부 · 법적고지</p>
+            </div><!--ftop-->
+            <div class="fbootom">
+                <div class="fleft"><img src="img/flogo.png"></div><!--fleft-->
+                <div class="fcenter">
+                    <p>사업자등록번호 : 312-81-42519 &nbsp;&nbsp;&nbsp;&nbsp; 대표이사 : 김찬호</p>
+                    <p>통신판매업종신고증 제 2011-서울중구-0771호</p>
+                    <p>주소 : (우)04555 서울시 중구 마른내로34(초동 106-9번지)KT&G을지로타워 3, 9-11층 CJ푸드빌(주) &nbsp;&nbsp;&nbsp;&nbsp; 호스팅제공자 : CJ올리브네트웍스(주)</p>
+                    <p>고객센터 : 1577-0700 &nbsp;&nbsp;&nbsp;&nbsp; 개인정보보호책임자 : 김재완 &nbsp;&nbsp;&nbsp;&nbsp; 대표 이메일 : help_master@cj.net</p>                    
+                    <br>
+                    <p>COPYRIGHT 2024&copy;CJ Foodville ALL RIGHT RESERVED.</p>
+                </div><!--fcenter-->
+                <div class="fright">                    
+                    <p><a href="https://www.youtube.com/@touslesjourskr"><img src="img/ic_you.png"></a></p>
+                    <p><a href="https://www.facebook.com/TOUSlesJOURS"><img src="img/ic_face.png"></a></p>
+                    <p><a href="https://www.instagram.com/touslesjours_kr/"><img src="img/ic_insta.png"></a></p>
+                </div><!--fright-->
+            </div><!--fbootom-->
+        </div><!--foot-->
+    </footer>
+</body>    
+</html>

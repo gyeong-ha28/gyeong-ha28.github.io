@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+/*ONE-Mobile-POP CSS*/
+@font-face {
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .wrap {
+     width: 1600px;
+     margin: auto;        
+ }
+ 
+ footer{
+     height: 332px;
+     background: #0d4633;
+     background-size: 100% 100%;
+     background-position: center center;
+
+ }
+ .foot{
+     
+     color: #fff;        
+ }
+ .ftop{
+     border-bottom: 2px solid #436d5f;
+     padding-bottom: 20px;
+     padding-top: 30px;
+     margin-bottom: 30px;
+ }
+ .foot .ftop span{
+     color: #ffb500;
+ }
+ .fbootom{
+     display: flex;
+     justify-content: space-between;
+     padding-top: 30px; 
+ }
+ .fright{        
+     width: 154px;
+     height: 40px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+ .fright img{
+     width: 38px;
+     height: 40px;       
+ }

@@ -1,0 +1,107 @@
+@font-face { 
+    font-family: 'NanumBarunGothic';
+    font-style: normal;
+    font-weight: 300;
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+    src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');
+}
+
+body{
+    font-family: 'NanumBarunGothic'
+}
+
+.a1 p{color: #0d4633;
+    font-size: larger;
+    font-weight: bold;}
+    
+@font-face{
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+main {
+    background-image: url(bread_img/banner6.png);
+    width: 100%;
+    height: 511px;
+   
+}
+
+
+.ca1 {
+    width: 800px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0d4633 ;
+    margin: -30px auto;
+    border-radius: 10px;
+}
+
+.ca1 a{
+    font-family: 'ONE-Mobile-POP';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    letter-spacing : 2px;
+}
+
+.ca1 ul {
+    padding: 10px 17%;
+}
+
+.ca1 ul li {
+    display: inline-block;
+    font-size: 19px;
+    margin: 10px 30px;
+    
+}
+
+.ca1 ul li a {
+    text-decoration: none;
+    list-style: none;
+    display: block;
+    color: white;
+}
+
+.ctt1 { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 300px auto;
+    padding: 100px 0;
+}
+
+.a1 {
+    margin: 20px 0px;
+    padding: 20px 0;
+    border: 1px solid rgb(223, 223, 223);
+    font-size: 17px;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+}
+
+.a1 img {
+    width: 300px;
+    height: 300px;
+    padding: 10px 10px;
+}
+
+.a1 p {
+    margin: 10px 0;
+}
+
+.a1 {width: 300px;}
+.a1 .img-wrap {overflow: hidden;}
+.ai {width: 100%; height: auto;}
+.a1 img:hover {transform: scale(1.05, 1.07); transition-duration: 0.5s;}
+.a1 img {transition-duration: 0.5s;}
+
+
+.foot p {
+    color: white;
+}
+
+

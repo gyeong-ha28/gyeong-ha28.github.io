@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main page</title>
+    <link rel="stylesheet" href="pc_fulldown.css">
+    <link rel="stylesheet" href="style_base.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
+    <script type="text/javascript" src="slick/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="./slick/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+
+    <!--폰트-->
+    <style>
+        @font-face { 
+        font-family: 'NanumBarunGothic';
+        font-style: normal;
+        font-weight: 300;
+        letter-spacing: 1px;
+        src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot');
+        src: url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.eot?#iefix') format('embedded-opentype'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.woff') format('woff'), url('//fastly.jsdelivr.net/font-nanumlight/1.0/NanumBarunGothicWebLight.ttf') format('truetype');}
+        
+        body{font-family:'NanumBarunGothic';}
+
+        @font-face {font-family:'ONE-Mobile-POP';
+            src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-POP.woff') format('woff');
+            font-weight: normal;
+            font-style: normal;
+            letter-spacing: 2px;}
+
+    </style>
+    <!--제품 탭-->
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #container {
+            width: 1600px;
+            margin: auto;
+            text-align: center;
+            background-color: white;
+            padding: 30px 0;
+            height: 550px;
+        }
+
+        .tab {
+            width: max-content;
+            list-style: none;
+            margin: auto;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .tab li {
+            background: #e7e7e7;
+            width: 200px;
+            margin: 0 5px;
+            float: left;
+            border-radius: 50px;
+        }
+
+        .tab li {
+            display: inline-block;
+            color: #365f52;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 0px;
+            font-size: 20px;
+            transition: 0.3s;
+            border-bottom: 0;
+            font-family:'ONE-Mobile-POP';
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            color: #838383;
+        }
+
+        .tabcontent img {}
+
+        ul.tab li.current {
+            background: #ffb500;
+        }
+
+        ul.tab li.current a {
+            color: white;
+        }
+
+        .tabcontent.current {
+            display: block;
+        }
+
+        .ct1 {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+        }
+
+        .p1 {
+            color: #0d4633;
+            font-weight: bold;
+            font-size: large;
+            padding-bottom: 10px;
+        }
+
+    </style>
+
+
+    <!--슬라이드-->
+    <style>
+        .slick-prev {
+            width: 39px;
+            height: 77px;
+            background-image: url(Previous.png);
+            background-repeat: no-repeat;
+            opacity: 100%;
+        }
+
+        .slick-next {
+            background-image: url(Next.png);
+            width: 39px;
+            height: 77px;
+            background-repeat: no-repeat;
+            opacity: 100%;
+        }
+
+        .slider img {
+            max-width: 950px;
+            margin: 0 auto;
+            box-shadow: 0px 30px 20px -35px #000000;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .slider {
+            width: 1920px;
+            height: 600px;
+            transform: translateY();
+            margin: 0px auto;
+        }
+
+        .slider .slick-slide {
+            margin: 80px;
+        }
+
+        .slick-prev:before,
+        .slick-next:before {
+            color: rgb(0, 0, 0);
+        }
+
+        .main2 {
+            text-align: center;
+            margin: 0 auto;
+        }
+
+    </style>
+
+    <!--푸터-->
+    <style>
+        }
+
+* {margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ .wrap {
+     width: 1600px;
+     margin: auto;        
+ }
+ 
+ footer{
+     height: 332px;
+     background: #0d4633;
+     background-size: 100% 100%;
+     background-position: center center;
+
+ }
+ .foot{     
+     color: #fff;
+
+ }
+ .ftop{
+     border-bottom: 2px solid #436d5f;
+     padding-bottom: 20px;
+     padding-top: 30px;
+     margin-bottom: 30px;
+ }
+ .foot .ftop span{
+     color: #ffb500;
+ }
+ .fbootom{
+     display: flex;
+     justify-content: space-between;
+     padding-top: 38px; 
+ }
+ .fright{        
+     width: 154px;
+     height: 40px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     flex-wrap: wrap;
+ }
+ .fright img{
+     width: 38px;
+     height: 40px;       
+ }
+
+    </style>
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="header clearfix">
+                    <div class="logo">
+                        <h1><a href="index.html">
+                                <img src="flogo.png">
+                            </a></h1>
+                    </div>
+                    <nav class="gnb">
+                        <ul class="clearfix">
+                            <li><a href="story/story.html">브랜드 소식</a>
+                                <ul class="submenu">
+                                    <li><a href="story/story.html">스토리</a></li>
+                                    <li><a href="#">제조 이야기</a></li>
+                                    <li><a href="#">뉴스&공지사항</a></li>
+                                    <li><a href="#">뚜레쥬르 착한빵</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="item/item.html">제품</a>
+                                <ul class="submenu">
+                                    <li><a href="#">케이크</a></li>
+                                    <li><a href="#">빵</a></li>
+                                    <li><a href="#">델리</a></li>
+                                    <li><a href="#">음료</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="event/event.html">이벤트&멤버십</a>
+                                <ul class="submenu">
+                                    <li><a href="#">진행중 이벤트</a></li>
+                                    <li><a href="#">CJ ONE 멤버십</a></li>
+                                    <li><a href="#">제휴 혜택</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">뚜레쥬르 앱</a>
+                                <ul class="submenu">
+                                    <li><a href="#">어플 소개</a></li>
+                                    <li><a href="#">홈페이지 예약배송</a></li>
+                                    <li><a href="#">꽃&케이크 배송</a></li>
+                                    <li><a href="#">대량 구매 문의</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--.nav-->
+                    <div class="topmenu">
+                        <span><a href="#">매장안내</a></span>
+                        <span><a href="#">고객센터</a></span>
+                        <span><a href="#">기사채용안내</a></span>
+                        <div class="login"><a href="#">Login</a></div>
+                    </div>
+                </div>
+            </div>
+            <!--.header-->
+        </div>
+        <!--.row-->
+
+        <!--.container-->
+        <div id="gnbBg"></div>
+    </header>
+
+    <main>
+        <div class="main_video">
+            <video src="main_video.mp4" muted autoplay loop width="1920px" height="1080px">
+            </video>
+        </div>
+    </main>
+
+    <div class="event">
+        <div class="title">
+            <h1>NEW & EVENT</h1>
+            <p>뚜레쥬르의 다양한 혜택과 이벤트 그리고 신제품</p>
+        </div>
+
+        <body>
+            <div class="main2">
+                <div class="slider">
+                    <div><img src="banner1.png" alt=""></div>
+                    <div><img src="banner2.png" alt=""></div>
+                    <div><img src="banner3.png" alt=""></div>
+                    <div><img src="banner4.png" alt=""></div>
+                    <div><img src="banner6.jpg" alt=""></div>
+                    <div><img src="banner5.png" alt=""></div>
+                </div>
+            </div>
+        </body>
+    </div>
+
+    <div class="wrap">
+        <div class="menu">
+
+            <div class="title">
+                <h1>Tous Les Jours's MENU</h1>
+                <p>뚜레쥬르의 인기있는 제품들을 소개합니다</p>
+            </div>
+
+            <div id="container">
+
+                <ul class="tab">
+                    <li class="current" data-tab="tab1">BREAD</li>
+                    <li data-tab="tab2">CAKE</li>
+                    <li data-tab="tab3">DELLY</li>
+                    <li data-tab="tab4">BEVERAGE</li>
+                </ul>
+
+                <div id="tab1" class="tabcontent current">
+                    <div class="ct1">
+                        <div class="c1">
+                            <a href="#"><img src="bread1.jpg"></a>
+                            <p class="p1">마구마구 밤식빵</p>
+                            <p>밤 다이스를 듬뿍 넣고,<br>
+                                밤 크림을 더해 풍미 UP!<br>
+                                더욱 커지고 촉촉하게 재탄생한 밤식빵</p>
+                        </div>
+                        <div class="c1">
+                            <a href="#"><img src="bread2.jpg"></a>
+                            <p class="p1">단팥빵</p>
+                            <p>달콤하고 부드러운 단팥 앙금을 듬뿍 넣어<br>
+                                남녀노소 좋아하는 간식빵</p>
+                        </div>
+                        <div class="c1">
+                            <a href="#"><img src="bread3.jpg"></a>
+                            <p class="p1">데일리 블루베리 베이글</p>
+                            <p>폭신하고 쫄깃한 기지에 <br>
+                                새콤달콤한 블루베리가 콕콕 박혀있는 <br>
+                                블루베리 베이글</p>
+                        </div>
+                        <div class="c1">
+                            <a href="#"><img src="bread4.jpg"></a>
+                            <p class="p1">사르르 우유 크림빵</p>
+                            <p>쫄깃 폭신한 빵에 진한 우유 크림이 <br>
+                                듬뿍 들어있어 먹는 순간 입 안에서<br>
+                                사르르 녹는 제품</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab2" class="tabcontent">
+                    <div class="ct1">
+                        <div class="c1">
+                            <a href="#"><img src="cake1.jpg"></a>
+                            <p class="p1">플라워베리 생크림</p>
+                            <p>부드럽고 촉촉한 화이트시트에<br>
+                                풍부한 맛의 생크림과<br>
+                                상큼한 과일로 장식한 생크림 케이크</p>
+                        </div>
+                        <div class="c1">
+                            <a href="#"><img src="cake2.jpg"></a>
+                            <p class="p1">초코생크림 케이크</p>
+                            <p>신선한 초코생크림과 다크체리가 샌드된<br>
+                                초코시트 위에 과일과 초콜릿으로<br>
+                                장식한 생크림 케이크</p>
+                        </div>
+                        <div class="c1">
+                            <a href="#"><img src="cake3.jpg"></a>
+                            <p class="p1">진한 녹차 케이크</p>
+                            <p>싱그러운 녹차 풍미가 살아있는<br>
+                                시트와 부드러운 연유 크림이<br>
+                                조화를 이룬 케이크</p>
+                        </div>
+                        <div class="c1">
+                            <a href="#"><img src="cake4.jpg"></a>
+                            <p class="p1">클래식 오브 치즈케이크</p>
+                            <p>엄선한 자연치즈의 진한 풍미가<br>
+                                그대로 살아있는 부드럽고 촉촉한<br>
+                                수플레 타입의 클래식 치즈 케이크</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab3" class="tabcontent">
+                    <div class="ct1">
+                        <div class="c1">
+                            <a href="#"><img src="delly1.jpg"></a>
+                            <p class="p1">에그튜나 샌드위치</p>
+                            <p>계란, 참치샐러드와 신선한 야채가<br>
+                                어우러진 단백질 가득 곡물 샌드위치</p>
+                        </div>
+                        <div class="c1">
+                            <a href="#"><img src="delly2.jpg"></a>
+                            <p class="p1">반숙란 샌드위치</p>
+                            <p>곡물식빵에 계란 샐러드와 반숙란이<br>
+                                통째로 들어가 담백 듬직한 모닝 샌드위치</p>
+                        </div>
+                        <div class="c1">
+                            <a href="#"><img src="delly3.jpg"></a>
+                            <p class="p1">매콤치킨랩</p>
+                            <p>매콤한 타코소스의 치킨과<br>
+                                사워크림, 치즈, 야채가 더해진 랩 샌드위치</p>
+                        </div>
+                        <div class="c1">
+                            <a href="#"><img src="delly4.jpg"></a>
+                            <p class="p1">싱그러운 치킨텐더 그린 랩</p>
+                            <p>클로렐라또띠아에 치킨텐더와<br>
+                                다양한 야채를 넣은 담백하고<br>
+                                건강한 랩 샌드위치</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="tab4" class="tabcontent">
+                    <div class="ct1">
+                        <div class="c1">
+                            <a href="#"><img src="bever1.jpg"></a>
+                            <p class="p1">아이스 아메리카노</p>
+                            <p>뚜레쥬르만의 스페셜 고급원두를<br>
+                                적절한 비율로 블렌드 하여<br>
+                                커피 본연의 맛과 향을 살린 아메리카노</p>
+                        </div>
+                        <div class="c1">
+                            <a href="#"><img src="bever2.jpg"></a>
+                            <p class="p1">복숭아 아이스티</p>
+                            <p>시원하게 즐기는 복숭아 홍차</p>
+                        </div>
+                        <div class="c1">
+                            <a href="#"><img src="bever3.jpg"></a>
+                            <p class="p1">아이스 그린티 라떼</p>
+                            <p>차광 녹차가 들어 있는 녹차가루와<br>
+                                우유가 어우러진 시원한 그린티라떼</p>
+                        </div>
+                        <div class="c1">
+                            <a href="#"><img src="bever4.jpg"></a>
+                            <p class="p1">자몽 에이드</p>
+                            <p>자몽과육과 탄산수를 넣어<br>
+                                톡 쏘는 맛이 일품인 자몽에이드</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="sns">
+        <div class="title">
+            <h1>With Tous Les Jours</h1>
+            <p>뚜레쥬르를 더 가까이서 만나보세요</p>
+        </div>
+        <div class="sns_ct">
+            <div class="snsbox1">
+                <div class="snsimg">
+                    <img src="sns1.jpg">
+                    <div class="snsicon">
+                        <a href="https://www.youtube.com/channel/UCZqlFCtuoM3PDAw1OvMCqwg"><img src="youtube.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="snsbox1">
+                <div class="snsimg">
+                    <img src="sns2.jpg">
+                    <div class="snsicon">
+                        <a href="https://www.instagram.com/touslesjours_kr/"><img src="insta.png"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="snsbox1">
+                <div class="snsimg">
+                    <img src="sns3.jpg">
+                    <div class="snsicon">
+                        <a href="https://www.facebook.com/TOUSlesJOURS"><img src="facebook.png"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="find">
+        <div class="title2">
+            <h1>매장찾기</h1>
+        </div>
+        <div class="search_ct">
+            <div class="sch_form">
+                <form method="post" action="">
+                    <input type="search" placeholder=" 매장명 또는 주소를 입력하세요.">
+                </form>
+            </div>
+            <div class="sch_icon">
+                <a href="#"><img src="search_icon.png"></a>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="foot wrap">
+            <div class="ftop">
+                <p>이용약관 · 위치기반서비스 이용약관 · <span>개인정보처리방침</span> · 이메일무단수집거부 · 법적고지</p>
+            </div>
+            <!--ftop-->
+            <div class="fbootom">
+                <div class="fleft"><img src="flogo.png"></div>
+                <!--fleft-->
+                <div class="fcenter">
+                    <p>사업자등록번호 : 312-81-42519 &nbsp;&nbsp;&nbsp;&nbsp; 대표이사 : 김찬호</p>
+                    <p>통신판매업종신고증 제 2011-서울중구-0771호</p>
+                    <p>주소 : (우)04555 서울시 중구 마른내로34(초동 106-9번지)KT&G을지로타워 3, 9-11층 CJ푸드빌(주) &nbsp;&nbsp;&nbsp;&nbsp; 호스팅제공자 : CJ올리브네트웍스(주)</p>
+                    <p>고객센터 : 1577-0700 &nbsp;&nbsp;&nbsp;&nbsp; 개인정보보호책임자 : 김재완 &nbsp;&nbsp;&nbsp;&nbsp; 대표 이메일 : help_master@cj.net</p>
+                    <br>
+                    <p>COPYRIGHT 2024&copy;CJ Foodville ALL RIGHT RESERVED.</p>
+                </div>
+                <!--fcenter-->
+                <div class="fright">
+                    <p><a href="https://www.youtube.com/@touslesjourskr"><img src="ic_you.png"></a></p>
+                    <p><a href="https://www.facebook.com/TOUSlesJOURS"><img src="ic_face.png"></a></p>
+                    <p><a href="https://www.instagram.com/touslesjours_kr/"><img src="ic_insta.png"></a></p>
+                </div>
+                <!--fright-->
+            </div>
+            <!--fbootom-->
+        </div>
+        <!--foot-->
+    </footer>
+
+
+
+    <!--제품 탭 스크립트-->
+    <script>
+        $(function() {
+            $('ul.tab li').click(function() {
+                var activeTab = $(this).attr('data-tab');
+                $('ul.tab li').removeClass('current');
+                $('.tabcontent').removeClass('current');
+                $(this).addClass('current');
+                $('#' + activeTab).addClass('current');
+            })
+        });
+
+    </script>
+
+    <!--슬라이드 스크립트-->
+    <script>
+        $('.slider').slick({
+            centerMode: true,
+            centerPadding: '400px',
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 1000,
+            responsive: [{
+                    breakpoint: 768,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                },
+                {
+                    breakpoint: 80,
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '40px',
+                        slidesToShow: 1
+                    }
+                }
+            ]
+        });
+
+    </script>
+    <script src="res_fulldown.js"></script>
+</body>
+
+</html>

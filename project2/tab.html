@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>tab example</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        #container {
+            width: 1600px;
+            margin: 50px auto;
+            text-align: center;
+            background-color: rgb(255, 255, 255);
+            padding: 30px 0;
+            height: 550px;
+        }
+
+        .tab {
+            width: max-content;
+            list-style: none;
+            margin: auto;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .tab li {
+            background: #e7e7e7;
+            width: 200px;
+            margin: 0 5px;
+            float: left;
+            border-radius: 50px;
+        }
+
+        .tab li a {
+            display: inline-block;
+            color: #0d4633;
+            text-align: center;
+            text-decoration: none;
+            padding: 10px 0px;
+            font-size: 20px;
+            transition: 0.3s;
+            border-bottom: 0;
+        }
+
+        .tabcontent {
+            display: none;
+            padding: 6px 12px;
+            color: #989898;
+        }
+
+        .tabcontent img {}
+
+        ul.tab li.current {
+            background: #ffb500;
+        }
+
+        ul.tab li.current a {
+            color: white;
+
+        }
+
+        .tabcontent.current {
+            display: block;
+        }
+        .ct1{
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;}
+        
+            .p1{
+                color: #0d4633;
+                font-weight: bold;
+                font-size: large}
+
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+
+        <ul class="tab">
+            <li class="current" data-tab="tab1"><a href="#">BREAD</a></li>
+            <li data-tab="tab2"><a href="#">CAKE</a></li>
+            <li data-tab="tab3"><a href="#">DELLY</a></li>
+            <li data-tab="tab4"><a href="#">BEVERAGE</a></li>
+        </ul>
+
+        <div id="tab1" class="tabcontent current">
+            <div class="ct1">
+                <div class="c1">
+                    <a href="#"><img src="bread1.jpg"></a>
+                    <p class="p1">마구마구 밤식빵</p>
+                    <p>밤 다이스를 듬뿍 넣고,<br>
+                    밤 크림을 더해 풍미 UP!<br>
+                    더욱 커지고 촉촉하게 재탄생한 밤식빵</p>
+                </div>
+                <div class="c1">
+                    <a href="#"><img src="bread2.jpg"></a>
+                    <p class="p1">단팥빵</p>
+                    <p>달콤하고 부드러운 단팥 앙금을 듬뿍 넣어<br>
+                        남녀노소 좋아하는 간식빵</p>
+                </div>
+                <div class="c1">
+                    <a href="#"><img src="bread3.jpg"></a>
+                    <p class="p1">데일리 블루베리 베이글</p>
+                    <p>폭신하고 쫄깃한 기지에 <br>
+                        새콤달콤한 블루베리가 콕콕 박혀있는 <br>
+                        블루베리 베이글</p>
+                </div>
+                <div class="c1">
+                    <a href="#"><img src="bread4.jpg"></a>
+                    <p class="p1">사르르 우유 크림빵</p>
+                    <p>쫄깃 폭신한 빵에 진한 우유 크림이 <br>
+                        듬뿍 들어있어 먹는 순간 입 안에서<br>
+                        사르르 녹는 제품</p>
+                </div>
+            </div>     
+        </div>
+
+        <div id="tab2" class="tabcontent">
+            <div class="ct1">
+                <div class="c1">
+                    <a href="#"><img src="cake1.jpg"></a>
+                    <p class="p1">플라워베리 생크림</p>
+                    <p>부드럽고 촉촉한 화이트시트에<br>
+                        풍부한 맛의 생크림과<br>
+                        상큼한 과일로 장식한 생크림 케이크</p>
+                </div>
+                <div class="c1">
+                    <a href="#"><img src="cake2.jpg"></a>
+                    <p class="p1">초코생크림 케이크</p>
+                    <p>신선한 초코생크림과 다크체리가 샌드된<br>
+                        초코시트 위에 과일과 초콜릿으로<br>
+                        장식한 생크림 케이크</p>
+                </div>
+                <div class="c1">
+                    <a href="#"><img src="cake3.jpg"></a>
+                    <p class="p1">진한 녹차 케이크</p>
+                    <p>싱그러운 녹차 풍미가 살아있는<br>
+                        시트와 부드러운 연유 크림이<br>
+                        조화를 이룬 케이크</p>
+                </div>
+                <div class="c1">
+                    <a href="#"><img src="cake4.jpg"></a>
+                    <p class="p1">클래식 오브 치즈케이크</p>
+                    <p>엄선한 자연치즈의 진한 풍미가<br>
+                        그대로 살아있는 부드럽고 촉촉한<br>
+                        수플레 타입의 클래식 치즈 케이크</p>
+                </div>
+            </div>     
+        </div>
+
+        <div id="tab3" class="tabcontent">
+            <div class="ct1">
+                <div class="c1">
+                    <a href="#"><img src="delly1.jpg"></a>
+                    <p class="p1">에그튜나 샌드위치</p>
+                    <p>계란, 참치샐러드와 신선한 야채가<br>
+                        어우러진 단백질 가득 곡물 샌드위치</p>
+                </div>
+                <div class="c1">
+                    <a href="#"><img src="delly2.jpg"></a>
+                    <p class="p1">반숙란 샌드위치</p>
+                    <p>곡물식빵에 계란 샐러드와 반숙란이<br>
+                        통째로 들어가 담백 듬직한 모닝 샌드위치</p>
+                </div>
+                <div class="c1">
+                    <a href="#"><img src="delly3.jpg"></a>
+                    <p class="p1">매콤치킨랩</p>
+                    <p>매콤한 타코소스의 치킨과<br>
+                        사워크림, 치즈, 야채가 더해진 랩 샌드위치</p>
+                </div>
+                <div class="c1">
+                    <a href="#"><img src="delly4.jpg"></a>
+                    <p class="p1">싱그러운 치킨텐더 그린 랩</p>
+                    <p>클로렐라또띠아에 치킨텐더와<br>
+                        다양한 야채를 넣은 담백하고<br>
+                        건강한 랩 샌드위치</p>
+                </div>
+            </div>     
+        </div>
+
+        <div id="tab4" class="tabcontent">
+            <div class="ct1">
+                <div class="c1">
+                    <a href="#"><img src="bever1.jpg"></a>
+                    <p class="p1">아이스 아메리카노</p>
+                    <p>뚜레쥬르만의 스페셜 고급원두를<br> 
+                        적절한 비율로 블렌드 하여<br>
+                        커피 본연의 맛과 향을 살린 아메리카노</p>
+                </div>
+                <div class="c1">
+                    <a href="#"><img src="bever2.jpg"></a>
+                    <p class="p1">복숭아 아이스티</p>
+                    <p>시원하게 즐기는 복숭아 홍차</p>
+                </div>
+                <div class="c1">
+                    <a href="#"><img src="bever3.jpg"></a>
+                    <p class="p1">아이스 그린티 라떼</p>
+                    <p>차광 녹차가 들어 있는 녹차가루와<br>
+                        우유가 어우러진 시원한 그린티라떼</p>
+                </div>
+                <div class="c1">
+                    <a href="#"><img src="bever4.jpg"></a>
+                    <p class="p1">자몽 에이드</p>
+                    <p>자몽과육과 탄산수를 넣어<br>
+                        톡 쏘는 맛이 일품인 자몽에이드</p>
+                </div>
+            </div>     
+        </div>
+    </div>
+
+    <script>
+        $(function() {
+            $('ul.tab li').click(function() {
+                var activeTab = $(this).attr('data-tab');
+                $('ul.tab li').removeClass('current');
+                $('.tabcontent').removeClass('current');
+                $(this).addClass('current');
+                $('#' + activeTab).addClass('current');
+            })
+        });
+    </script>
+
+
+</body></html>

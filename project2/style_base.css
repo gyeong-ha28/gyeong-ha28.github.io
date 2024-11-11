@@ -1,0 +1,66 @@
+
+*{margin: 0;padding: 0; box-sizing: border-box;}
+.wrap{width: 1600px;margin: 0 auto;}
+
+main, .event, .menu, .sns{height: 1080px;}
+
+.title{
+    text-align: center;
+    padding: 100px;}
+.title h1{
+        font-size: 60px;
+        font-family:'ONE-Mobile-POP';
+        color: #0d4633;
+        padding-bottom: 5px;}
+.title2 h1{
+    font-size: 60px;
+    color: white;
+    padding: 100px;}
+.title p{font-size: 25px;
+padding-top: 10px;}
+
+.banner_ct{
+    display: flex;
+    justify-content: space-between;}
+.ct1 p{line-height: 20px;}
+
+
+.sns{background: url(sns_bg.jpg);
+text-align: center;}
+
+.sns_ct{
+    width: 1600px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    padding-top: 60px;}
+
+.snsimg{
+    position: relative;
+    z-index: 0;}
+    
+.snsicon{
+    position: absolute;
+    z-index: 999;
+    top:98%;
+    left:98%;
+    transform:translate(-98%,-98%);}
+
+.find{
+    text-align: center;
+    background: url(find_bg.jpg);
+    height: 510px;}
+
+.search_ct{
+        width: 490px;    
+        display: flex;
+        justify-content: space-between;
+        align-items: center center;
+        margin: 0 auto;}
+
+.search_ct form input{
+    width: 450px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.452);}
+
+.search_ct form input::placeholder{color: rgb(255, 255, 255);}

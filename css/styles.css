@@ -100,15 +100,15 @@
     /* color-1(#11ABB0)
      * color-2(#F06000)
      */
-    --color-1: hsla(182, 82%, 38%, 1);
+    --color-1: rgb(84, 141, 255);
     --color-2: rgb(255, 151, 151);
 
     /* theme color variations
      */
     --color-1-lighter: hsla(182, 82%, 58%, 1);
     --color-1-light: hsla(182, 82%, 48%, 1);
-    --color-1-dark: hsla(182, 82%, 28%, 1);
-    --color-1-darker: hsla(182, 82%, 18%, 1);
+    --color-1-dark: rgb(45, 86, 234);
+    --color-1-darker: rgb(28, 48, 147);
     --color-2-lighter: hsla(24, 100%, 67%, 1);
     --color-2-light: hsla(24, 100%, 57%, 1);
     --color-2-dark: hsla(24, 100%, 37%, 1);
@@ -4657,7 +4657,7 @@ button.btn--pill {
 }
 
 .s-contact .section-header-allcaps {
-    color: rgb(31, 27, 27);
+    color: rgb(61, 61, 61);
     margin-bottom: var(--vspace-2_5);
 }
 
@@ -4698,7 +4698,7 @@ button.btn--pill {
 .contact-block__header {
     font-size: 2.2rem;
     font-weight: 400;
-    color: rgba(121, 121, 121, 0.4);
+    color: rgba(42, 141, 243, 1);
     margin-top: 0;
     margin-bottom: .2rem;
 }
